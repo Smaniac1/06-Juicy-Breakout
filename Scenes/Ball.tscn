@@ -9,9 +9,10 @@ bounce = 1.0
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 8, 8 )
 
-[node name="Ball" type="RigidBody2D"]
-editor/display_folded = true
-position = Vector2( 544, 488 )
+[node name="Ball" type="RigidBody2D" groups=[
+"Ball",
+]]
+position = Vector2( 546.828, 483.588 )
 mode = 2
 physics_material_override = SubResource( 1 )
 gravity_scale = 0.0
@@ -23,11 +24,21 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." groups=[
+"Ball",
+]]
 margin_left = -8.0
 margin_top = -8.0
 margin_right = 8.0
 margin_bottom = 8.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=[
+"Ball",
+]]
 shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}

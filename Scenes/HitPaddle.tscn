@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="Curve" id=1]
+min_value = -200.0
+max_value = 200.0
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 200 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 1
+emission_sphere_radius = 10.0
+flag_disable_z = true
+gravity = Vector3( 0, 0, 1 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+radial_accel_curve = SubResource( 2 )
+scale = 5.0
+color = Color( 1, 1, 0, 1 )
+
+[node name="HitPaddle" type="Particles2D"]
+z_index = -100
+emitting = false
+amount = 1000
+lifetime = 6.0
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource( 3 )

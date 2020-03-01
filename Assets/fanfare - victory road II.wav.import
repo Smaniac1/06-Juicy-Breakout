@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fanfare - victory road II.wav-ac48d8453bf1d3c29ac918b2674cd78e.sample"
+
+[deps]
+
+source_file="res://Assets/fanfare - victory road II.wav"
+dest_files=[ "res://.import/fanfare - victory road II.wav-ac48d8453bf1d3c29ac918b2674cd78e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Mirror Breaking-SoundBible.com-73239746.wav" type="AudioStream" id=1]
+
+[node name="GlassBreaking3" type="AudioStreamPlayer2D"]
+stream = ExtResource( 1 )

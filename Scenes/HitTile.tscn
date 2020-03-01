@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0.0188679, 0.00450456 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+flag_disable_z = true
+direction = Vector3( 0, 0, 1 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 57.47
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = -100.0
+radial_accel = 31.03
+scale = 5.0
+scale_curve = SubResource( 2 )
+
+[node name="HitTile" type="Particles2D"]
+position = Vector2( 0.350708, -0.809113 )
+emitting = false
+amount = 4
+lifetime = 0.35
+one_shot = true
+explosiveness = 1.0
+local_coords = false
+process_material = SubResource( 3 )

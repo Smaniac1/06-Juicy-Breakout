@@ -10,20 +10,33 @@ func _ready():
 		startCountdown(countdown)
 
 func startCountdown(c):
-	countdown = c
-	if countdown > 0:
-		Timer.set_wait_time(1)
-		Timer.start()
-		text = "Starting in " + str(countdown)
-
+	if len(get_tree().get_nodes_in_group("Ball")) == 0:
+		countdown = c
+		if countdown > 0:
+			Timer.set_wait_time(1)
+			Timer.start()
+			text = "Starting in " + str(countdown)
+	else:
+		countdown = c
+		if countdown > 0:
+			Timer.set_wait_time(1)
+			Timer.start()
+			text = "Paddle resetting in " + str(countdown)
 
 func _on_Timer_timeout():
 	countdown -= 1
-	if countdown > 0:
-		text = "Starting in " + str(countdown)
+	if len(get_tree().get_nodes_in_group("Ball")) == 0:
+		if countdown > 0:
+			text = "Starting in " + str(countdown)
+		else:
+			text = ""
+			if not Game.has_node("Ball"):
+				var pos = Paddle.position - Vector2(0, 32)
+				Game.make_new_ball(pos)
+			Timer.stop()
 	else:
-		text = ""
-		if not Game.has_node("Ball"):
-			var pos = Paddle.position - Vector2(0, 32)
-			Game.make_new_ball(pos)
-		Timer.stop()
+		if countdown > 0:
+			text = "Paddle resetting in " + str(countdown)
+		else:
+			text = ""
+			Timer.stop()

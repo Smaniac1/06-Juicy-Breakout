@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready():
+	$GameOverMusic.playing = true
 	pass
 
 func _on_Button_pressed():

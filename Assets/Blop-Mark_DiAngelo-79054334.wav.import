@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Blop-Mark_DiAngelo-79054334.wav-9ad117389da294332e63aceda471f498.sample"
+
+[deps]
+
+source_file="res://Assets/Blop-Mark_DiAngelo-79054334.wav"
+dest_files=[ "res://.import/Blop-Mark_DiAngelo-79054334.wav-9ad117389da294332e63aceda471f498.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

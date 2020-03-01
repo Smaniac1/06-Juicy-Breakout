@@ -1,41 +1,24 @@
 # 06-Juicy-Breakout
 
-This is an opportunity for you to implement some of the "juicy" features as demonstrated in the 2012 GDC presentation, "Juice it or Lose it."
+This is a breakout clone that I got from my college professor, with the purpose of making it "juicy." The things I have added are
 
-I have provided a simple, generic brick breaker game, built in Godot. You can use the presentation as a guide or use your own imagination, but your assignment is to make the game feel more "juicy": kinetic, reactive, physical.
-
-Please list the features you add in the README.md. You will be awarded one point per feature you add (including a soundtrack and sound effects). Some of the features demonstrated in the presentation include:
- - Changing the color of the paddle, ball, and blocks
- - Animate how the blocks and the paddle appear on the screen
- - Squeeze and stretch the paddle
- - Animate the size of the ball when it hits something
- - Wobble the ball after it hits something
- - Animate the color of the ball after it hits something
- - Shake the blocks or the paddle when the ball hits something
- - Add sound effects
- - Add music
- - Add particles when a block is hit
- - Add particles when the paddle is hit
- - Make the blocks fall off the screen when they are hit
- - Make the blocks rotate as they are hit
- - Break the blocks when they are hit
- - Add a comet trail to the ball
- - Add screen shake
- - Add eyes to the paddle
- - Make the eyes blink
- - Make the eyes follow the ball
- - Add a smile to the paddle and animate it based on the location of the ball
- - Add a background to the game
- - etc.
-
- When you are done, *update the LICENSE and README.md*, commit and push your code to GitHub, and turn in the URL for your repository on Canvas.
-
----
-
-The grading criteria will be as follows:
-
- - [1 point] Assignment turned in on time
- - [1] Repository contains a descriptive README.md
- - [1] No (script) syntax errors
- - [1] No other runtime errors
- - [16] Features to make the game more "juicy"
+1. 8 diffrent colored tiles that each have a unique point output (5-40)
+2. A visual effect for hitting the paddle
+3. A sound effect for hitting the paddle
+4. A visual effect for dying
+5. A sound effect for dying
+6. A visual effect for hitting a tile
+7. 4 sound effects for hitting a tile (the sound effect being choosen at random)
+8. A visual effect for hitting the wall
+9. 3 sound effects for hitting the wall (the sound effect being choosen at random)
+10. Made it so after a certain amount of score a new ball will be added, usually the player will end up with around 4 if they don't lose any
+11. Made it so the paddle shrinks each time a ball hits the paddle or a wall and grows each time a tile is hit (this resets after each life)
+12. Added a background to the game
+13. Made it so the ball changes color each time it hits something
+14. Made it so the paddle changes color each time a ball hits something
+15. Made it so that if there are still balls after one fell the game will tell you how long until the paddles size is rested. If there are no balls the game will countdown until the next ball spawns.
+16. added music to the main game
+17. added music to the game over screen
+18. added music to the win screen
+19. added colorful points that spawn when the ball hits something and stays there for the rest of the game, slowly moving.
+20. added a trail to the ball that is the same color as the ball.
